@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/survey.css">
+  </head>
+
+  <body id="body" style="background-image: url('images/books.jpg');">
+    <h1 id="title" style="color:black; text-shadow: 2px 2px;"><em>BOOKS</em></h1>
+    <p id="description" style="color:black;">
+      <em><b>This is a survey where you can tell about the books you are inspired by.</b></em>
+    </p>
+    <form id="survey-form">
+      <div>
+        <label class="label" id="name-label">Name: </label>
+        <input class="input-form" type="text" name="name" id="name" required placeholder="Your name"><br>
+
+        <label class="label" id="email-label">Email:</label>
+        <input class="input-form" type="email" name="email" id="email" required placeholder="Your email"><br>
+
+        <label class="label" id="number-label">Number: </label>
+        <input class="input-form" type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+      </div>
+
+      <div id="genre">
+        <label class="label">Genre:</label>
+        <select id="dropdown" name="genre">
+          <option value="philosophy">Philosophy</option>
+          <option value="novel">Novel</option>
+          <option value="narrative">Narrative</option>
+        </select>
+        <br>
+      </div>
+
+      <div id="comments">
+        <label class="label">Additioal Comments:</label>
+        <textarea id="holder-size" placeholder="Additional Comments"></textarea>
+        <br>
+      </div>
+
+      <div id="button-area">
+        <label class="label">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label class="label-radio" for="male">Male</label><br>
+        <input class="input" type="radio" id="female" name="gender" value="female">
+        <label class="label-radio" for="female">Female</label><br>
+        <input class="input" type="radio" id="other" name="gender" value="other">
+        <label class="label-radio" for="other">Other</label>
+        <br>
+      </div>
+
+      <div id="button-area">
+        <label class="label">Author:</label>
+        <input class="input" type="checkbox" id="philosophy" name="philosophy" value="Nietzche">
+        <label class="label" for="philosophy"> I love Nietzche</label><br>
+        <input class="input" type="checkbox" id="novel" name="novel" value="Orwell">
+        <label class="label" for="novel"> I love Orwell</label><br>
+        <input class="input" type="checkbox" id="narrative" name="narrative" value="Hemingway">
+        <label class="label" for="narrative"> I love Hemingway</label>
+        <br>
+      </div>
+
+
+      <input class="input" type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+
+</html>
